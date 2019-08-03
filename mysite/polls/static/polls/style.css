@@ -1,3 +1,150 @@
-body {
-	background-color: lightblue;
+
+
+.bottomleft {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	font-size: 14px;
 }
+
+.container-fluid {
+	width: 90%
+}
+
+.form-radio {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	position: relative;
+	background-color: rgba(250, 250, 250, 0.6);
+	color: rgba(156, 14, 14, .8);
+	top: 10px;
+	height: 30px;
+	width: 30px;
+	border: 0;
+	border-radius: 50px;
+	cursor: pointer;     
+	margin-right: 5px;
+	outline: none;
+}
+
+.form-radio:checked::before {
+	position: absolute;
+	font: 14px/1 'Open Sans', sans-serif;
+	left: 11px;
+	top: 7px;
+	content: '\02143';
+	transform: rotate(40deg);
+}
+.form-radio:hover {
+	background-color: #fac209;
+}
+.form-radio:checked{
+	background-color: #ca680d;
+}
+label{
+	font: 15px/1.7 'Open Sans', sans-serif;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	cursor: pointer;
+} 
+
+html { 
+/* background: url("{% static 'images/calc_background2.jpg' %}") no-repeat center center fixed;  */
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+@media screen and (orientation: portrait) {
+html {
+	transform: rotate(-90deg);
+	transform-origin: left top;
+	width: 100vh;
+	overflow-x: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: black;
+}
+}
+
+
+.list-group-item:last-child {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+body {
+	background: transparent;
+}
+
+.test_back {
+background-color: #d36811;
+}
+
+.form-signin {
+/* max-width: 550px; */
+padding: 20px 0;
+margin: 0 auto;
+text-align: left;
+}    
+
+.box-style {
+	background-color: rgba(224, 142, 47, 0.8);
+	padding: 0 20px;
+
+}
+
+.box-style2 {
+	background-color: rgba(173, 57, 11, 0.8);
+	padding: 0 20px;
+}
+
+.box-style3 {
+	background: rgba(201, 200, 195, 0.68);
+}
+
+.fullscreen-bg {
+					position: fixed;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					overflow: hidden;
+					z-index: -100; 
+					}
+																	
+.fullscreen-bg__video {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					}
+
+.hide_this {
+					display: none;
+}
+
+@media screen and (max-width: 900px) {
+					html {
+						font-size: 8px
+					}
+					.bottomleft {
+						font-size: 8px
+					}
+					.form-radio {
+						height: 15px;
+						width: 15px;
+					}
+					.form-radio:checked::before {
+						left: 3px;
+						top: 0px;
+					}
+}
+											 
