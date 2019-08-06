@@ -25,7 +25,7 @@ SECRET_KEY = '8wheedsljuhp3syokmxv^8(esoe$s(@9)8x9lgw+galt*^fhwu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ch264.pythonanywhere.com']
 
 
 # Application definition
@@ -119,3 +119,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/ch264/django_try/mysite/static'
